@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        <script type="text/javascript" src="formvalidation.js"></script>
+        <style type="text/css">
+            .error{
+                font-style: italic;
+                color: red;
+            }
+
+
+
+        </style>
+    </head>
+<body>
+    <form action="thanks.html" onsubmit="return validation()">
+        <p>Name: 
+            <input type="text" name="name" id="name">
+            <span id="nameError" class="error"> </span>
+      </p>
+        <P>Mobile:
+            <input type="number" name="mobile" id="mobile">
+            <span id="mobileError" class="error"></span>
+      </P>
+        <p>Gender:
+            <input type="radio" name="gender" value="F" id="gFemale">Female
+            <input type="radio" name="gender" value="M" id="gMale">Male
+            <span id="genderError" class="error"></span>
+      </p>
+        <p>City:
+        <select id="city">
+            <option value="">Select city</option>
+            <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="banglore">Banglore</option>
+            <option value="delhi">Delhi</option>
+        </select>
+        <span id="cityError" class="error"></span>	
+    </p>
+    <p>
+      <input type="submit" value="submit">
+    </p>
+    </form>
+    
+        
+    </form>
+
+</body>
+</html>
